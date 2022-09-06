@@ -20,6 +20,10 @@ match command:
         print(encoding)
 
     case "decode":
-        # Implement the decoding here
-        decoding = ""
+        y = (x.split("0x"))
+        y.pop(0)
+        list =[]
+        for x in y:
+            list.append((chr(int(x, base = 16))))
+        decoding = "".join(list)
         print(decoding)
