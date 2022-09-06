@@ -28,7 +28,7 @@ for x in password:
         if 6 < len(password) < 16 : 
             count.append(5)
 if len(count) == 5: 
-    is_valid = "TRUE"
+    is_valid = True
 
 
 
