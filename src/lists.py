@@ -39,10 +39,17 @@ if len(sys.argv) < 2:
     print("Incorrect number of arguments.", file=sys.stderr)
     sys.exit(1)
 
+
+
+
 match sys.argv[1]:
     case "mean":
-        # put your solution to the first exercise here
-        mean = "mean of x"
+        sum = 0
+        count = 0
+        for n in x:
+            sum = sum + n 
+            count = count + 1
+            mean = sum/count
         print(mean)
 
     case "times":
