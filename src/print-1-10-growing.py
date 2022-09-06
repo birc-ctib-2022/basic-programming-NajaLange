@@ -7,5 +7,8 @@ from readline import append_history_file
 count = ""
 
 for x in range(1,11):
-    count = count + " " + str(x)
+    if x < 11:
+        count = count + " " + str(x)
+    else:
+        count = count + str(x)
     print(count)
