@@ -3,7 +3,7 @@
 # the answer is "yes" (lower case).
 
 
-x = str(input("Do you want to stop?"))
+x = ""
 
 while x != "yes":
     x = str(input("Do you want to stop?"))
