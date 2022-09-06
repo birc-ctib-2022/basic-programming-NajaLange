@@ -4,8 +4,8 @@
 from readline import append_history_file
 
 
-count = []
+count = ""
 
 for x in range(1,11):
-    count.append( x)
+    count = count + " " + str(x)
     print(count)
