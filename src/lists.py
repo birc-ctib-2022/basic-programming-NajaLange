@@ -53,13 +53,17 @@ match sys.argv[1]:
         print(mean)
 
     case "times":
-        # Put your solution to the second exercise here
         times_three = []
+        for n in x: 
+            times_three.append(n*3)
         print_list(times_three)
 
+
     case "even":
-        # Put your solution to the third exercise here
         even = []
+        for n in x: 
+            if n % 2 == 0:
+                even.append(n)
         print_list(even)
 
     case _:
