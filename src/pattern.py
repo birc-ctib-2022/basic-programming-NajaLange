@@ -13,3 +13,5 @@ for x in range(9):
     elif x <= 8:
         print((count + " ")*(x-count2))
         count2 = count2 + 2
+    else:
+        print((count)*(x-count2))
