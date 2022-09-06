@@ -15,7 +15,7 @@ match command:
     case "encode":
         list = []
         for i in x:
-            list.append(str(ord(i)))
+            list.append(hex(ord(i)))
             encoding = ''.join(list)
         print(encoding)
 
