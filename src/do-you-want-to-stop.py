@@ -6,4 +6,6 @@
 x = ""
 
 while x != "yes":
-    x = str(input("Do you want to stop?"))
+    x = str(input("Do you want to stop? "))
+    if x == "yes":
+        break
