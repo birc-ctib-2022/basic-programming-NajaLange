@@ -8,7 +8,7 @@ count = ""
 
 for x in range(5):
     if x == 1:
-        count = count + str(*)
+        count = count + str(x)
     else:
-        count = count + " " + str(*)
+        count = count + " " + str(x)
     print(count)
