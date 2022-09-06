@@ -13,9 +13,10 @@ command, x = sys.argv[1:3]
 
 match command:
     case "encode":
-        encoding = ""
+        list = []
         for i in x:
-            encoding = encoding + str(ord(i))
+            list.append(str(ord(i)))
+            encoding = ''.join(list)
         print(encoding)
 
     case "decode":
