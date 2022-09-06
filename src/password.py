@@ -27,7 +27,7 @@ for x in password:
     if 5 not in count:
         if 6 < len(password) < 16 : 
             count.append(5)
-if (int(count[0])+int(count[1])+int(count[2])+int(count[3])+int(count[4])) == 15:
+if len(count) == 5: 
     is_valid = "TRUE"
 
 
