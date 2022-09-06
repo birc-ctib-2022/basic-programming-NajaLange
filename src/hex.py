@@ -10,10 +10,12 @@ if len(sys.argv) != 3:
 
 command, x = sys.argv[1:3]
 
+
 match command:
     case "encode":
-        # Implement the encoding here
         encoding = ""
+        for i in x:
+            encoding = encoding + str(ord(i))
         print(encoding)
 
     case "decode":
