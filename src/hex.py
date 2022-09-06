@@ -10,13 +10,20 @@ if len(sys.argv) != 3:
 
 command, x = sys.argv[1:3]
 
+
 match command:
     case "encode":
-        # Implement the encoding here
-        encoding = ""
+        list = []
+        for i in x:
+            list.append(hex(ord(i)))
+            encoding = ''.join(list)
         print(encoding)
 
     case "decode":
-        # Implement the decoding here
-        decoding = ""
+        y = (x.split("0x"))
+        y.pop(0)
+        list =[]
+        for x in y:
+            list.append((chr(int(x, base = 16))))
+        decoding = "".join(list)
         print(decoding)
